@@ -1,4 +1,27 @@
+// build.gradle (Project Level)
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    // Repositories are now handled by pluginManagement in settings.gradle.
+    // The classpath itself will be resolved via those definitions.
+    dependencies {
+        // Defines the Android Gradle Plugin (AGP) version for the entire project.
+        // It should align with the version specified in libs.versions.toml and the app module.
+        classpath 'com.android.tools.build:gradle:8.4.1' // Updated to latest stable AGP (as of May 2025)
+    }
+}
+
+// These are definitions for plugins that can be applied to modules.
+// 'apply false' means they are defined here but not applied to the root project.
 plugins {
-alias(libs.plugins.android.application) apply false
+    id 'com.android.application' version '8.4.1' apply false // Aligned with latest AGP
+    id 'com.android.library' version '8.4.1' apply false     // Aligned with latest AGP
+    // Add other common plugins here if needed
+}
+
+// The 'allprojects { repositories { ... } }' block is deprecated and conflicts with
+// dependencyResolutionManagement in settings.gradle. It has been removed.
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
 }

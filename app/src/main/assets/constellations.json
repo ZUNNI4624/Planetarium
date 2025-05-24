@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Orion",
+    "ra": 5.5833,
+    "dec": 6.0,
+    "magnitude": 0,
+    "lines": [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0], [1, 6], [6, 7], [2, 7]],
+    "stars": [
+      { "name": "Betelgeuse", "ra": 5.9195, "dec": 7.4071, "magnitude": 0.45 },
+      { "name": "Bellatrix", "ra": 5.4188, "dec": 6.3497, "magnitude": 1.64 },
+      { "name": "Mintaka", "ra": 5.5334, "dec": -0.2991, "magnitude": 2.23 },
+      { "name": "Alnilam", "ra": 5.6034, "dec": -1.2019, "magnitude": 1.69 },
+      { "name": "Alnitak", "ra": 5.6793, "dec": -1.9426, "magnitude": 1.74 },
+      { "name": "Saiph", "ra": 5.7959, "dec": -9.6696, "magnitude": 2.07 },
+      { "name": "Rigel", "ra": 5.2422, "dec": -8.2016, "magnitude": 0.18 }
+    ],
+    "mythology": "Orion was a hunter in Greek mythology. The constellation represents him with his shield and club, facing the charge of Taurus the Bull."
+  },
+  {
+    "name": "Ursa Major",
+    "ra": 10.6667,
+    "dec": 55.0,
+    "magnitude": 0,
+    "lines": [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6]],
+    "stars": [
+      { "name": "Dubhe", "ra": 11.0622, "dec": 61.7508, "magnitude": 1.79 },
+      { "name": "Merak", "ra": 11.0306, "dec": 56.3824, "magnitude": 2.37 },
+      { "name": "Phecda", "ra": 11.8968, "dec": 53.6948, "magnitude": 2.44 },
+      { "name": "Megrez", "ra": 12.2573, "dec": 57.0325, "magnitude": 3.31 },
+      { "name": "Alioth", "ra": 12.9004, "dec": 55.9598, "magnitude": 1.77 },
+      { "name": "Mizar", "ra": 13.3988, "dec": 54.9254, "magnitude": 2.04 },
+      { "name": "Alkaid", "ra": 13.7923, "dec": 49.3133, "magnitude": 1.86 }
+    ],
+    "mythology": "Ursa Major represents a great bear in many cultures. In Greek mythology, it is associated with Callisto, who was transformed into a bear by Zeus's jealous wife Hera."
+  },
+  {
+    "name": "Cassiopeia",
+    "ra": 1.0,
+    "dec": 60.0,
+    "magnitude": 0,
+    "lines": [[0, 1], [1, 2], [2, 3], [3, 4]],
+    "stars": [
+      { "name": "Caph", "ra": 0.1531, "dec": 59.1497, "magnitude": 2.27 },
+      { "name": "Schedar", "ra": 0.6751, "dec": 56.5373, "magnitude": 2.23 },
+      { "name": "Gamma Cas", "ra": 0.9457, "dec": 60.7167, "magnitude": 2.47 },
+      { "name": "Ruchbah", "ra": 1.4357, "dec": 60.2353, "magnitude": 2.68 },
+      { "name": "Segin", "ra": 1.9009, "dec": 63.67, "magnitude": 3.38 }
+    ],
+    "mythology": "Cassiopeia was the vain queen of Aethiopia in Greek mythology. She was placed in the sky as punishment for her boastfulness about her daughter Andromeda's beauty."
+  },
+  {
+    "name": "Leo",
+    "ra": 10.5,
+    "dec": 15.0,
+    "magnitude": 0,
+    "lines": [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0], [2, 6], [6, 7], [7, 8]],
+    "stars": [
+      { "name": "Regulus", "ra": 10.1395, "dec": 11.9672, "magnitude": 1.35 },
+      { "name": "Algieba", "ra": 10.3328, "dec": 19.8414, "magnitude": 2.28 },
+      { "name": "Adhafera", "ra": 10.8897, "dec": 23.4172, "magnitude": 3.44 },
+      { "name": "Ras Elased Australis", "ra": 9.7631, "dec": 26.0067, "magnitude": 2.98 },
+      { "name": "Ras Elased Borealis", "ra": 9.8794, "dec": 23.7742, "magnitude": 3.85 },
+      { "name": "Zosma", "ra": 11.2358, "dec": 20.5239, "magnitude": 2.56 },
+      { "name": "Chertan", "ra": 11.2369, "dec": 15.4297, "magnitude": 3.33 },
+      { "name": "Denebola", "ra": 11.8177, "dec": 14.5719, "magnitude": 2.13 },
+      { "name": "Subra", "ra": 9.6883, "dec": 9.8925, "magnitude": 3.52 }
+    ],
+    "mythology": "Leo represents the Nemean Lion, a monster in Greek mythology with an impenetrable hide. It was killed by Heracles as his first labor."
+  }
+]

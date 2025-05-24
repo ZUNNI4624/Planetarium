@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/surface_dark"
+    android:padding="16dp">
+
+<TextView
+android:id="@+id/dialog_location_title"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/select_location"
+android:textColor="@color/accent_teal"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp" />
+
+<com.google.android.material.textfield.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+app:boxStrokeColor="@color/accent_teal"
+    app:hintTextColor="@color/text_secondary"
+    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/edit_search_location"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/search_locations"
+android:inputType="text"
+android:maxLines="1"
+android:textColor="@color/text_light"
+    android:textColorHint="@color/text_secondary"
+    android:imeOptions="actionSearch" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/recycler_locations"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:layout_constrainedHeight="true"
+android:minHeight="150dp"
+android:maxHeight="300dp"
+android:layout_marginBottom="16dp"
+app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+<Button
+android:id="@+id/btn_cancel_location_picker"
+style="@style/Widget.Material3.Button.TextButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="end"
+android:text="@string/cancel"
+android:textColor="@color/accent_teal" />
+
+    </LinearLayout>

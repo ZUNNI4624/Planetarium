@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Sirius",
+    "ra": 6.7525,
+    "dec": -16.7161,
+    "magnitude": -1.46,
+    "spectralType": "A1V",
+    "distance": 8.6
+  },
+  {
+    "name": "Canopus",
+    "ra": 6.3992,
+    "dec": -52.6956,
+    "magnitude": -0.74,
+    "spectralType": "A9II",
+    "distance": 310
+  },
+  {
+    "name": "Rigil Kentaurus",
+    "ra": 14.6577,
+    "dec": -60.8332,
+    "magnitude": -0.27,
+    "spectralType": "G2V",
+    "distance": 4.37
+  },
+  {
+    "name": "Arcturus",
+    "ra": 14.2612,
+    "dec": 19.1824,
+    "magnitude": -0.05,
+    "spectralType": "K1.5III",
+    "distance": 36.7
+  },
+  {
+    "name": "Vega",
+    "ra": 18.6156,
+    "dec": 38.7856,
+    "magnitude": 0.03,
+    "spectralType": "A0V",
+    "distance": 25.04
+  },
+  {
+    "name": "Capella",
+    "ra": 5.2781,
+    "dec": 45.998,
+    "magnitude": 0.08,
+    "spectralType": "G5III",
+    "distance": 42.9
+  },
+  {
+    "name": "Rigel",
+    "ra": 5.2422,
+    "dec": -8.2016,
+    "magnitude": 0.13,
+    "spectralType": "B8Ia",
+    "distance": 860
+  },
+  {
+    "name": "Procyon",
+    "ra": 7.6553,
+    "dec": 5.225,
+    "magnitude": 0.34,
+    "spectralType": "F5IV",
+    "distance": 11.46
+  },
+  {
+    "name": "Betelgeuse",
+    "ra": 5.9195,
+    "dec": 7.4071,
+    "magnitude": 0.5,
+    "spectralType": "M1-2Ia",
+    "distance": 548
+  },
+  {
+    "name": "Achernar",
+    "ra": 1.6286,
+    "dec": -57.2367,
+    "magnitude": 0.46,
+    "spectralType": "B6Vep",
+    "distance": 139
+  },
+  {
+    "name": "Hadar",
+    "ra": 14.0637,
+    "dec": -60.373,
+    "magnitude": 0.61,
+    "spectralType": "B1III",
+    "distance": 390
+  },
+  {
+    "name": "Altair",
+    "ra": 19.8463,
+    "dec": 8.8683,
+    "magnitude": 0.77,
+    "spectralType": "A7V",
+    "distance": 16.73
+  },
+  {
+    "name": "Acrux",
+    "ra": 12.4433,
+    "dec": -63.099,
+    "magnitude": 0.77,
+    "spectralType": "B0.5IV",
+    "distance": 320
+  },
+  {
+    "name": "Aldebaran",
+    "ra": 4.5987,
+    "dec": 16.5092,
+    "magnitude": 0.85,
+    "spectralType": "K5III",
+    "distance": 65.3
+  },
+  {
+    "name": "Antares",
+    "ra": 16.4901,
+    "dec": -26.432,
+    "magnitude": 1.09,
+    "spectralType": "M1.5Iab",
+    "distance": 600
+  },
+  {
+    "name": "Spica",
+    "ra": 13.4199,
+    "dec": -11.1614,
+    "magnitude": 1.04,
+    "spectralType": "B1III-IV",
+    "distance": 250
+  },
+  {
+    "name": "Pollux",
+    "ra": 7.7553,
+    "dec": 28.0262,
+    "magnitude": 1.14,
+    "spectralType": "K0III",
+    "distance": 33.78
+  },
+  {
+    "name": "Fomalhaut",
+    "ra": 22.9608,
+    "dec": -29.6222,
+    "magnitude": 1.16,
+    "spectralType": "A3V",
+    "distance": 25.13
+  },
+  {
+    "name": "Deneb",
+    "ra": 20.6906,
+    "dec": 45.2803,
+    "magnitude": 1.25,
+    "spectralType": "A2Ia",
+    "distance": 2600
+  },
+  {
+    "name": "Mimosa",
+    "ra": 12.7953,
+    "dec": -59.6889,
+    "magnitude": 1.3,
+    "spectralType": "B0.5III",
+    "distance": 280
+  }
+]

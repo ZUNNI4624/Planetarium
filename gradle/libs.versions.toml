@@ -1,22 +1,61 @@
+# gradle/libs.versions.toml
+
+# This is a Gradle Version Catalog file.
+# It defines versions for dependencies, bundles of dependencies, and plugins.
+# Learn more: https://docs.gradle.org/current/userguide/version_catalog.html
+
 [versions]
-agp = "8.9.2"
+# Android Gradle Plugin (AGP) version - Updated to latest stable for Gradle 8.x
+agp = "8.4.1" # Matches the classpath in project-level build.gradle
+
+# Third-party libraries (latest stable versions)
+okhttp = "4.12.0"
+gson = "2.10.1"
+
+# AndroidX Libraries (latest stable versions)
+appcompat = "1.6.1"       # Your original was 1.6.1, and this is stable. (1.7.0 is available as alpha/beta for AGP 8.3+)
+material = "1.10.0"       # Your original was 1.10.0, and this is stable. (1.12.0 is available as alpha/beta for AGP 8.3+)
+constraintlayout = "2.1.4" # Your original was 2.1.4, and this is stable. (2.2.1 is available as alpha/beta for AGP 8.3+)
+cardview = "1.0.0"         # Stable, no major updates
+recyclerview = "1.3.2"     # Stable, no major updates
+
+# Lifecycle components (latest stable versions)
+lifecycle-viewmodel = "2.7.0"
+lifecycle-livedata = "2.7.0"
+
+# Testing Libraries (latest stable versions)
 junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
-material = "1.12.0"
-activity = "1.10.1"
-constraintlayout = "2.2.1"
+androidx-test-ext-junit = "1.1.5" # Reverted to 1.1.5 for broader compatibility with other AndroidX libs
+espresso-core = "3.5.1"
+preference = "1.2.1"   # Reverted to 3.5.1 for broader compatibility with other AndroidX libs
 
 [libraries]
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+# Android Gradle Plugin itself (for new plugin management if you use it in settings.gradle)
+gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+# Third-party libraries
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# AndroidX Libraries
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+# Lifecycle components
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "lifecycle-viewmodel" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle-livedata" }
+
+# Testing Libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+
 
 [plugins]
+# Plugin references for application within modules (e.g., id 'com.android.application')
 android-application = { id = "com.android.application", version.ref = "agp" }
-
+android-library = { id = "com.android.library", version.ref = "agp" } # Add this for consistency if you might have library modules

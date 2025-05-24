@@ -1,6 +1,10 @@
+// settings.gradle
+
 pluginManagement {
     repositories {
         google {
+            // It's good practice to filter repositories to only include what they host.
+            // Google Maven hosts Android-related artifacts.
             content {
                 includeGroupByRegex("com\\.android.*")
                 includeGroupByRegex("com\\.google.*")
@@ -8,16 +12,23 @@ pluginManagement {
             }
         }
         mavenCentral()
-        gradlePluginPortal()
+        gradlePluginPortal() // Required for resolving Gradle plugins themselves
+        maven { url 'https://jitpack.io' }
     }
 }
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
 dependencyResolutionManagement {
+    // This enforces that all repositories for dependencies are defined here.
+    // No other 'repositories { ... }' blocks should appear in subprojects' build.gradle files.
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        // Add any other necessary artifact repositories here.
     }
 }
 
 rootProject.name = "Planetarium"
-include ':app'
+include ':app' // Make sure your app module is included in the build

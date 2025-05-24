@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Sun",
+    "ra": 18.6546,
+    "dec": 23.4367,
+    "magnitude": -26.7,
+    "diameter": 1392700,
+    "distance": 0.00001
+  },
+  {
+    "name": "Moon",
+    "ra": 15.5,
+    "dec": -18.2,
+    "magnitude": -12.6,
+    "diameter": 3474,
+    "distance": 0.00257
+  },
+  {
+    "name": "Mercury",
+    "ra": 19.2,
+    "dec": 25.1,
+    "magnitude": -0.5,
+    "diameter": 4879,
+    "distance": 0.39
+  },
+  {
+    "name": "Venus",
+    "ra": 20.5,
+    "dec": 22.8,
+    "magnitude": -4.1,
+    "diameter": 12104,
+    "distance": 0.72
+  },
+  {
+    "name": "Mars",
+    "ra": 22.1,
+    "dec": 15.2,
+    "magnitude": -2.6,
+    "diameter": 6792,
+    "distance": 1.52
+  },
+  {
+    "name": "Jupiter",
+    "ra": 0.5,
+    "dec": 5.1,
+    "magnitude": -2.2,
+    "diameter": 142984,
+    "distance": 5.2
+  },
+  {
+    "name": "Saturn",
+    "ra": 2.8,
+    "dec": 12.9,
+    "magnitude": 0.5,
+    "diameter": 120536,
+    "distance": 9.58
+  },
+  {
+    "name": "Uranus",
+    "ra": 3.5,
+    "dec": 18.2,
+    "magnitude": 5.7,
+    "diameter": 51118,
+    "distance": 19.22
+  },
+  {
+    "name": "Neptune",
+    "ra": 4.2,
+    "dec": 21.5,
+    "magnitude": 7.8,
+    "diameter": 49528,
+    "distance": 30.05
+  }
+]

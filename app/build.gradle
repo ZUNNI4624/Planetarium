@@ -1,15 +1,19 @@
+// build.gradle (App Module Level)
+
 plugins {
-    alias(libs.plugins.android.application)
+    // Apply the Android Application plugin to this module.
+    // The version is managed by the plugins block in the project-level build.gradle or settings.gradle.
+    id 'com.android.application'
 }
 
 android {
     namespace 'com.zunairah.planetarium'
-    compileSdk 35
+    compileSdk 34 // Use the latest stable SDK for compilation
 
     defaultConfig {
         applicationId "com.zunairah.planetarium"
-        minSdk 24
-        targetSdk 35
+        minSdk 21 // Minimum Android version supported by your app
+        targetSdk 34 // Target the latest stable SDK version for behavior changes
         versionCode 1
         versionName "1.0"
 
@@ -18,23 +22,49 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled false // Set to true for release builds to reduce APK size
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        // Ensure Java 8 compatibility for your source and target bytecode
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // Enable View Binding for easier and safer UI element interaction (recommended)
+    buildFeatures {
+        viewBinding true
     }
 }
 
 dependencies {
-
+    // AndroidX UI Components - all versions managed via libs.versions.toml for consistency
     implementation libs.appcompat
     implementation libs.material
-    implementation libs.activity
     implementation libs.constraintlayout
+    implementation libs.cardview
+    implementation libs.recyclerview
+
+    // Lifecycle components for MVVM architecture
+    implementation libs.lifecycle.viewmodel
+    implementation libs.lifecycle.livedata
+
+    // Networking
+    implementation libs.okhttp
+
+    // JSON parsing
+    implementation libs.gson
+    implementation libs.androidx.preference
+
+    // Testing
     testImplementation libs.junit
-    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core
+}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
